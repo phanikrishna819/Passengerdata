@@ -20,7 +20,8 @@ def data():
     choice = input("would you like to enter the data yes/no\n")
     if(choice=="yes"):
         return data()
-    wb.save("flight.xlsx")
+    File = input("enter the file name to store the data")
+    wb.save(File+".xlsx")
 
 bold = Font(bold = True)
 print("would you like to enter the data yes/no\n")
